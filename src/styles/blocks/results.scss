@@ -1,11 +1,20 @@
-.result {
+.results {
 	min-width: 100vw;
 	height: 100vh;
 	position: fixed;
 	top: 0;
 	left: 0;
-	display: none;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.3s ease 0s;
 	overflow: auto;
+	&.js-active {
+		opacity: 1;
+		pointer-events: auto;
+	}
+}
+.result {
+	display: none;
 	padding: 0 10px;
 	@media (max-width: 1920px){
 		padding: 0 1vw;
@@ -175,13 +184,13 @@
 	}
 	&__img-man {
 		position: absolute;
-		bottom: -60px;
+		bottom: -10px;
 		right: 0px;
 		width: 973px;
 		height: 651px;
 		background: url('../images/results/man.png') 0 0 / 100% 100% no-repeat;
 		@media (max-width: 1920px){
-			bottom: -3.13vw;
+			bottom: -0.52vw;
 			width: 50.68vw;
 			height: 33.91vw;
 		}
@@ -208,6 +217,49 @@
 			font-size: 3.50vw;
 		}
 	}
+	
+	&__goback {
+		font-family: 'Glober';
+		font-style: normal;
+		color: #FFFFFF;
+		font-weight: 800;
+		font-size: 28px;
+		line-height: 141.2%;
+		text-align: center;
+		text-transform: uppercase;
+		background: #D3006A;
+		padding: 17px 40px;
+		border: 1px solid #FFFFFF;
+		border-radius: 22px;
+		display: inline-block;
+		margin-top: 40px;
+		cursor: pointer;
+		position: relative;
+		z-index: 9;
+		@media (max-width: 1920px){
+			margin-top: 2.08vw;
+			font-size: 1.46vw;
+			padding: 0.89vw 2.08vw;
+			border: 0.05vw solid #FFFFFF;
+			border-radius: 1.15vw;
+		}
+		@media (max-width: 800px){
+			margin-top: 2vw;
+			font-size: 5vw;
+			padding: 1.88vw 2vw;
+			border: 0.13vw solid #FFFFFF;
+			border-radius: 2.75vw;
+		}
+		&-wrapper {
+			display: flex;
+			justify-content: center;
+			@media (max-width: 800px){
+				justify-content: flex-start;
+				padding-left: 8vw;
+			}
+		}
+	}
+
 	&__bottom {
 		display: flex;
 		align-items: flex-end;
