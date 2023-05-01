@@ -3,6 +3,9 @@
 	height: 100vh;
 	min-width: 100vw;
 	padding: 65px 0 135px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	@media (max-width: 1920px){
 		padding: 3.39vw 0 7.03vw;
 	}
