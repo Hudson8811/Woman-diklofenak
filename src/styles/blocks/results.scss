@@ -96,7 +96,7 @@
 			padding: 1.88vw 2vw 4vw;
 			border: 0.13vw solid #FFFFFF;
 			border-radius: 2.75vw;
-			max-width: 83.13vw;
+			max-width: 81.82vw;
 		}
 	}
 	&__title {
@@ -197,7 +197,7 @@
 		@media (max-width: 800px){
 			width: 94vw;
 			height: 79.38vw;
-			bottom: 20vw;
+			bottom: 26vw;
 			background: url('../images/results/man-mob.png') 0 0 / 100% 100% no-repeat;
 		}
 	}
@@ -280,34 +280,38 @@
 	}
 	
 	&__social {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin-top: 40px;
+		margin-top: 24px;
 		@media (max-width: 1920px){
-			margin-top: 2vw;
+			margin-top: 1.25vw;
 		}
 		@media (max-width: 800px){
-			align-items: flex-start;
-			margin-top: 4vw;
-			padding-left: 8vw;
+			max-width: 30.63vw;
+			position: absolute;
+			bottom: 24vw;
+			right: 4.25vw;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 0;
+			padding: 0;
 		}
 		&-title {
 			font-family: 'Glober';
 			font-style: normal;
-			font-weight: 800;
-			margin-bottom: 8px;
-			font-size: 40px;
-			line-height: 141.2%;
-			text-align: center;
-			color: #ffffff;
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 30px;
+			text-transform: uppercase;
+			color: #FFFFFF;
 			@media (max-width: 1920px){
 				margin-bottom: 0.42vw;
-				font-size: 2.08vw;
+				font-size: 0.83vw;
+				line-height: 1.56vw;
 			}
 			@media (max-width: 800px){
-				margin-bottom: 1.5vw;
-				font-size: 5vw;
+				font-size: 1.75vw;
+				line-height: 2.75vw;
+				text-align: center;
 			}
 		}
 	}
@@ -315,38 +319,38 @@
 	&__icons {
 		display: flex;
 		align-items: center;
-		margin: 0 -20px;
-		margin-top: 10px;
+		margin: 0 -6px;
+		margin-top: 7px;
 		@media (max-width: 1920px){
-			margin: 0 -1.04vw;
-			margin-top: 0.52vw;
+			margin: 0 -0.31vw;
+			margin-top: 0.36vw;
 		}
-		@media (max-width: 1920px){
-			margin: 0 -2.50vw;
-			margin-top: 1.25vw;
+		@media (max-width: 800px){
+			margin: 0 -0.75vw;
+			margin-top: 1.13vw;
 		}
 	}
 	&__icon {
 		display: block;
-		width: 60px;
-		height: 60px;
-		min-width: 60px;
-		min-height: 60px;
-		margin: 0 20px;
+		width: 35px;
+		height: 35px;
+		min-width: 35px;
+		min-height: 35px;
+		margin: 0 6px;
 		position: relative;
 		@media (max-width: 1920px){
-			width: 3.13vw;
-			height: 3.13vw;
-			min-width: 3.13vw;
-			min-height: 3.13vw;
-			margin: 0 1.04vw;
+			width: 1.82vw;
+			height: 1.82vw;
+			min-width: 1.82vw;
+			min-height: 1.82vw;
+			margin: 0 0.31vw;
 		}
 		@media (max-width: 800px){
-			width: 7.50vw;
-			height: 7.50vw;
-			min-width: 7.50vw;
-			min-height: 7.50vw;
-			margin: 0 2.50vw;
+			width: 4.38vw;
+			height: 4.38vw;
+			min-width: 4.38vw;
+			min-height: 4.38vw;
+			margin: 0 0.75vw;
 		}
 		img {
 			position: absolute;
@@ -362,6 +366,7 @@
 		flex: 0 1 30%;
 		@media (max-width: 800px){
 			flex: 1 1 100%;
+			margin-top: 4vw;
 			padding-left: 3vw;
 		}
 		ol {
